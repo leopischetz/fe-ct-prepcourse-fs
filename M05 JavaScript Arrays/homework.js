@@ -3,22 +3,26 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array[0];
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array[array.length-1];
 }
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return array.length;
 }
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -70,6 +74,13 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+   if(arguments.length === 0) return 0;
+   if(arguments.length === 1) return arguments[0];
+   var resultado = 1;
+   for(var i=0; i<arguments.length; i++){
+      resultado= resultado*arguments[i];
+   };
+   return resultado;
 }
 
 function cuentoElementos(array) {
@@ -94,6 +105,15 @@ function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
+   var sonIguales = array[0];
+   var condicion = true;
+   for(var i=1; i<array.length; i++){
+      if(sonIguales !== array[i]){
+         condicion = false;
+         return condicion;
+      };
+   };
+   return condicion;
 }
 
 function mesesDelAño(array) {
@@ -101,6 +121,21 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   var newArray=[];
+   for(var i=0; i<array.length; i++){
+      if(array[i]==="Enero"){
+         newArray.push(array[i]);
+      } else if(array[i]==="Marzo"){
+         newArray.push(array[i]);
+      } else if(array[i]==="Noviembre"){
+         newArray.push(array[i]);
+      }
+   };
+   if(newArray.length !== 3){
+      return "No se encontraron los meses pedidos";
+   } else{
+      return newArray;
+   }
 }
 
 function tablaDelSeis() {
