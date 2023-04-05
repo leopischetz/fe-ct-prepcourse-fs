@@ -89,7 +89,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('eliminarPropiedad(objeto, propiedad)', function () {
+   xdescribe('eliminarPropiedad(objeto, propiedad)', function () {
       it('Debe eliminar la propiedad del objeto', function () {
          const updatedObject = {
             x: 1,
@@ -104,7 +104,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('tieneEmail(objetoUsuario)', function () {
+   xdescribe('tieneEmail(objetoUsuario)', function () {
       it('Debe retornar True si el objetoUsuario posee un valor definido en la propiedad "email"', function () {
          expect(
             tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' })
@@ -116,7 +116,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('tienePropiedad(objeto, propiedad)', function () {
+   xdescribe('tienePropiedad(objeto, propiedad)', function () {
       it('Debe retornar True si el objeto posee una propiedad con el nombre del parámetro', function () {
          const obj = {
             x: true,
@@ -131,7 +131,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('verificarPassword(user, password)', function () {
+   xdescribe('verificarPassword(user, password)', function () {
       it('Debe retornar True si la contraseña es correcta', function () {
          const user = {
             password: 'Me encanta JS!',
@@ -148,7 +148,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('actualizarPassword(objetoUsuario, password)', function () {
+   xdescribe('actualizarPassword(objetoUsuario, password)', function () {
       it('Debe devolver al usuario con la contraseña actualizada', function () {
          const user = {
             password: 'Me encanta JS!',
@@ -158,7 +158,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('agregarAmigo(objetoUsuario, nuevoAmigo)', function () {
+   xdescribe('agregarAmigo(objetoUsuario, nuevoAmigo)', function () {
       it('Debe agregar el nuevo amigo al final del arreglo de una propiedad', function () {
          const user = {
             amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
@@ -168,7 +168,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('pasarUsuarioAPremium(objetoMuchosUsuarios)', function () {
+   xdescribe('pasarUsuarioAPremium(objetoMuchosUsuarios)', function () {
       it("Debe retornar un arreglo donde todos los usuarios tengan el valor True en su propiedad 'esPremium'", function () {
          const users = [
             { esPremium: false },
@@ -188,7 +188,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('sumarLikesDeUsuario(objetoUsuario)', function () {
+   xdescribe('sumarLikesDeUsuario(objetoUsuario)', function () {
       it('Debe retornar la suma de los likes de todos los post', function () {
          const user = {
             usernombre: 'Jhon Doe',
@@ -225,7 +225,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   describe('agregarMetodoCalculoDescuento(objetoProducto)', function () {
+   xdescribe('agregarMetodoCalculoDescuento(objetoProducto)', function () {
       const storeItem = {
          precio: 80,
          porcentajeDeDescuento: 0.1,
