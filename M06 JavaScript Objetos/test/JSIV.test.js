@@ -168,7 +168,7 @@ describe('JAVASCRIPT IV', function () {
       });
    });
 
-   xdescribe('pasarUsuarioAPremium(objetoMuchosUsuarios)', function () {
+   describe('pasarUsuarioAPremium(objetoMuchosUsuarios)', function () {
       it("Debe retornar un arreglo donde todos los usuarios tengan el valor True en su propiedad 'esPremium'", function () {
          const users = [
             { esPremium: false },

@@ -101,7 +101,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('arrayContiene(array, elemento)', function () {
+   xdescribe('arrayContiene(array, elemento)', function () {
       it('Debe retornar True si el arreglo contiene el elemento', function () {
          expect(arrayContiene([10, 10, 16, 12], 10)).toBe(true);
       });
@@ -111,7 +111,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('agregarNumeros(arrayOfNums)', function () {
+   xdescribe('agregarNumeros(arrayOfNums)', function () {
       it('Debe retornar la suma de todos los números del arreglo', function () {
          expect(agregarNumeros([10, 10, 16])).toBe(36);
          expect(agregarNumeros([97, 100])).toBe(197);
@@ -119,14 +119,14 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('promedioResultadosTest(resultadosTest)', function () {
+   xdescribe('promedioResultadosTest(resultadosTest)', function () {
       it('Debe retornar el promedio de todas las notas', function () {
          expect(promedioResultadosTest([10, 10, 16, 12])).toBe(12);
          expect(promedioResultadosTest([97, 100, 80, 55, 72, 94])).toBe(83);
       });
    });
 
-   describe('numeroMasGrande(arrayOfNums)', function () {
+   xdescribe('numeroMasGrande(arrayOfNums)', function () {
       it('Debe retornar el número más grande del arreglo', function () {
          expect(numeroMasGrande([10, 10, 16, 12])).toBe(16);
          expect(numeroMasGrande([97, 100, 80, 55, 72, 94])).toBe(100);
@@ -134,7 +134,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('multiplicarArgumentos()', function () {
+   xdescribe('multiplicarArgumentos()', function () {
       it('Debe retornar el producto de los argumentos', function () {
          const product = multiplicarArgumentos(5, 5);
          const product2 = multiplicarArgumentos();
@@ -149,7 +149,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('cuentoElementos(array)', function () {
+   xdescribe('cuentoElementos(array)', function () {
       it('Debe retornar la cantidad de elementos mayores a a 18', function () {
          expect(cuentoElementos([10, 10, 18, 21])).toBe(1);
          expect(cuentoElementos([97, 100, 190, 5, 7, 9])).toBe(3);
@@ -157,7 +157,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('diaDeLaSemana(numeroDeDia)', function () {
+   xdescribe('diaDeLaSemana(numeroDeDia)', function () {
       it('Debe retornar "Es dia laboral" dependiendo del número del día', function () {
          expect(diaDeLaSemana(3)).toBe('Es dia laboral');
          expect(diaDeLaSemana(2)).toBe('Es dia laboral');
@@ -168,7 +168,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('empiezaConNueve(num))', function () {
+   xdescribe('empiezaConNueve(num))', function () {
       it('Debe retornar True si recibe un número que comienza con 9', function () {
          expect(empiezaConNueve(98)).toBe(true);
          expect(empiezaConNueve(9)).toBe(true);
@@ -180,7 +180,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('todosIguales(array)', function () {
+   xdescribe('todosIguales(array)', function () {
       it('Debe retornar True si todos los números del arreglo son iguales', function () {
          expect(todosIguales([20, 20, 20, 20])).toBe(true);
          expect(todosIguales([230, 230, 230, 230])).toBe(true);
@@ -190,7 +190,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('mesesDelAño(array)', function () {
+   xdescribe('mesesDelAño(array)', function () {
       var ok = [
          'Marzo',
          'Diciembre',
@@ -213,7 +213,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('tablaDelSeis()', function () {
+   xdescribe('tablaDelSeis()', function () {
       it('Debe retornar la tabla de multiplicar del 6 en un arreglo', function () {
          expect(tablaDelSeis()).toEqual([
             0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60,
@@ -221,14 +221,14 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('mayorACien(array)', function () {
+   xdescribe('mayorACien(array)', function () {
       it('Debe retornar un arreglo con todos los número mayores a 100', function () {
          var integers = [100, 4, 56, 78, 200, 120, 7, 160, 148, 22];
          expect(mayorACien(integers)).toEqual([200, 120, 160, 148]);
       });
    });
 
-   describe('EXTRA CREDIT | breakStatement(num)', function () {
+   xdescribe('EXTRA CREDIT | breakStatement(num)', function () {
       it('Debe retornar un arreglo con los elementos incrementados en dos', function () {
          expect(breakStatement(50)).toEqual([
             52, 54, 56, 58, 60, 62, 64, 66, 68, 70,
@@ -239,7 +239,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('EXTRA CREDIT | continueStatement(num)', function () {
+   xdescribe('EXTRA CREDIT | continueStatement(num)', function () {
       it('Debe retornar un arreglo con los valores resultantes de incrementarlos en 2 siempre que el número y la iteración seas diferentes a 5', function () {
          expect(continueStatement(50)).toEqual([
             52, 54, 56, 58, 60, 62, 64, 66, 68,

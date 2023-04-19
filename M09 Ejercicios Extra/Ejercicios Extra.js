@@ -6,18 +6,19 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
-    var arreglo = [];
-    for(x in objeto){
-      arreglo.push([x, objeto[x]]);
-    }
-    return arreglo;
-//    var arreglo = [];
-//   var claves = Object.keys(objeto);
-//   for(var i = 0; i < claves.length; i++){
-//     var clave = claves[i];
-//     arreglo.push([clave, objeto[clave]]);
-//   }
-//   return arreglo;
+   // var array= [];
+   // var claves = Object.keys(objeto); //["D","B","C"]
+   // for(var i=0; i<claves.length; i++){
+   //    var letra= claves[i];
+   //    array.push([letra,objeto[letra]]);
+   // }
+   // return array; 
+   var array=[];
+
+   for(x in objeto){
+      array.push([x, objeto[x]]);
+   }
+   return array;
 }
 
 function numberOfCharacters(string) {
@@ -26,20 +27,26 @@ function numberOfCharacters(string) {
    // Las letras deben estar en orden alfabético.
    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
-   var sortedString = string.split('').sort(function(a, b) {
+
+   // "ddaabcbcbc"
+
+   var ordenada = string.split("").sort(function(a,b){
       return a.charCodeAt(0) - b.charCodeAt(0);
-    }).join('');
-  
-    var obj = {};
-    for (var i=0; i<sortedString.length; i++){
-      if(Object.keys(obj).includes(sortedString[i])){
-        obj[sortedString[i]]++;
-      } else {
-        obj[sortedString[i]] = 1;
-      };  
-    };
-    
-    return obj;
+   }).join("");
+
+   // ordenada = "aabcccdd"
+
+   var obj={}; //{a:2,b:1,c:3,d:2}
+
+   for(var i=0; i<ordenada.length; i++){
+      if(Object.keys(obj).includes(ordenada[i])){
+         obj[ordenada[i]]++;
+      } else{
+         obj[ordenada[i]]=1;
+      };
+   };
+   return obj;
+
 }
 
 function capToFront(string) {
@@ -48,18 +55,22 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
-   var cadenaOne = "";
-   var cadenaTwo = "";
-   var cadenaFinal = "";
+
+   var resultado="";
+   var mayusculas="";
+   var minusculas="";
+
    for(var i=0; i<string.length; i++){
-     if(string[i] === string[i].toUpperCase()){
-       cadenaOne += string[i];
-     } else {
-       cadenaTwo += string[i];
-     }
-   }
-   cadenaFinal = cadenaOne + cadenaTwo;
-   return cadenaFinal;
+      if(string[i] === string[i].toUpperCase()){
+         mayusculas+=string[i];
+      } else{
+         minusculas+=string[i];
+      };
+   };
+
+   resultado=mayusculas+minusculas;
+
+   return resultado;  
 }
 
 function asAmirror(frase) {

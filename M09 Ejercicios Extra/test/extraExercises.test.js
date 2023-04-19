@@ -54,7 +54,7 @@ describe('EJERCICIOS EXTRA', function () {
          expect(capToFront('DESArrollaDOR')).toEqual('DESADORrrolla');
       });
    });
-   xdescribe('asAmirror(frase)', function () {
+   describe('asAmirror(frase)', function () {
       it('Debe transformar la frase en una frase espejo.', function () {
          expect(asAmirror('I love you so much!')).toBe('I evol uoy os !hcum');
          expect(asAmirror('The Henry Challenge is close!')).toBe(
@@ -62,7 +62,7 @@ describe('EJERCICIOS EXTRA', function () {
          );
       });
    });
-   xdescribe('capicua(numero)', function () {
+   describe('capicua(numero)', function () {
       it('Debe retornar el string esperado dependiendo si el número es o no capicúa.', function () {
          expect(capicua(12321)).toEqual('Es capicua');
          expect(capicua(1111)).toEqual('Es capicua');
@@ -70,7 +70,7 @@ describe('EJERCICIOS EXTRA', function () {
          expect(capicua(7878700)).toEqual('No es capicua');
       });
    });
-   xdescribe('deleteAbc(string)', function () {
+   describe('deleteAbc(string)', function () {
       it('Debe retornar el mismo string, pero eliminando las letras "a", "b" y "c"', function () {
          expect(deleteAbc('abcefgh')).toEqual('efgh');
          expect(deleteAbc('abc')).toEqual('');
@@ -78,7 +78,7 @@ describe('EJERCICIOS EXTRA', function () {
          expect(deleteAbc('limon')).toEqual('limon');
       });
    });
-   xdescribe('sortArray(arrayOfStrings)', function () {
+   describe('sortArray(arrayOfStrings)', function () {
       it('Debe retornar un nuevo arreglo con los elementos en orden de crecimiento a partir de sus longitudes', function () {
          expect(sortArray(['You', 'are', 'beautiful', 'looking'])).toEqual([
             'You',
@@ -94,7 +94,7 @@ describe('EJERCICIOS EXTRA', function () {
          ]);
       });
    });
-   xdescribe('buscoInterseccion(array1, array2)', function () {
+   describe('buscoInterseccion(array1, array2)', function () {
       it('Debe retornar un arreglo con los elementos en común de cada arreglo. Si no hay elementos en común, retornar un arreglo vacío', function () {
          expect(buscoInterseccion([1, 2, 3], [1, 5, 8, 3])).toEqual([1, 3]);
          expect(buscoInterseccion([7, 23, 4], [23, 70])).toEqual([23]);
